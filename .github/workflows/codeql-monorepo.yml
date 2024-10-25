@@ -40,6 +40,7 @@ jobs:
         with:
           fetch-depth: 1
           sparse-checkout: "packages/*"
+          path: 'dynamic'
         #   EX:
         #   {
         # "javascript": {
@@ -70,7 +71,7 @@ jobs:
         id: changes
         uses: advanced-security/monorepo-code-scanning-action/changes@main
         with:
-          projects-json: dynamic-projects.json
+          projects-json: dynamic/dynamic-projects.json
 
   scan:
     if: needs.changes.outputs.scan-required == true
