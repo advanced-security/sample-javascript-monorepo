@@ -13,7 +13,6 @@
 # If you want to specifiy custom queries, you can do so in the custom analysis workflow.
 #
 # You can find an example of what that looks like in this repository at .github/workflows/custom-codeql-analysis.yml
-
 name: "CodeQL monorepo"
 
 on:
