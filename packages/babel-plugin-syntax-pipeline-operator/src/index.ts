@@ -12,6 +12,7 @@ export interface Options {
 
 export default declare((api, { proposal, topicToken }: Options) => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   if (typeof proposal !== "string" || !PIPELINE_PROPOSALS.includes(proposal)) {
     const proposalList = PIPELINE_PROPOSALS.map(p => `"${p}"`).join(", ");

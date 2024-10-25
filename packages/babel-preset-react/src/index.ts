@@ -19,6 +19,7 @@ export interface Options {
 
 export default declarePreset((api, opts: Options) => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   const {
     development,

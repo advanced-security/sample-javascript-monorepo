@@ -107,6 +107,7 @@ export default declare((api, opts: Options) => {
   const { types: t, template } = api;
 
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   const JSX_PRAGMA_REGEX = /\*?\s*@jsx((?:Frag)?)\s+(\S+)/;
 

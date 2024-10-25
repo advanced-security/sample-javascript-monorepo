@@ -14,6 +14,7 @@ type State = {
 
 export default declare<State>((api, options: Options) => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   const { method, module } = options;
   // Todo(BABEL 8): Consider default it to false

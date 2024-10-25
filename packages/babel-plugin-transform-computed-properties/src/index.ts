@@ -31,6 +31,7 @@ if (!process.env.BABEL_8_BREAKING) {
 
 export default declare((api, options: Options) => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   const setComputedProperties =
     api.assumption("setComputedProperties") ?? options.loose;
