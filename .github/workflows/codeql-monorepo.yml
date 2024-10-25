@@ -84,6 +84,7 @@ jobs:
     strategy:
       matrix:
         project: ${{ fromJson(needs.changes.outputs.projects).projects }}
+        scan-required: ${{ steps.changes.outputs.scan-required }}
     steps:
       - name: Analyze code
         uses: advanced-security/monorepo-code-scanning-action/scan@main
