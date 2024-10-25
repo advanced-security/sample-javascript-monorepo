@@ -101,4 +101,4 @@ jobs:
         uses: advanced-security/monorepo-code-scanning-action/republish-sarif@main
         with:
           projects: ${{ needs.changes.outputs.projects }}
-          merged-only: true
+#          merged-only: true
