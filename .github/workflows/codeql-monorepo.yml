@@ -57,7 +57,7 @@ jobs:
               json+="\"$folder_name\": [ \"packages/$folder_name\" ],"
           done
           json="${json%,}}}"
-          echo -e "$json" > output.json
+          echo -e "$json" > dynamic-projectS.json
           cat dynamic-projects.json
 
       - name: Spot changes to projects
