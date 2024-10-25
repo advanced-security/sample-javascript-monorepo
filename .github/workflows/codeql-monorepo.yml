@@ -1,0 +1,97 @@
+# This workflow determines which sub projects of a monorepo are affected by a PR, and then runs CodeQL analysis on those projects.
+# 
+# It uses Actions from `advanced-security/monorepo-code-scanning-action`
+#
+# The specific language and paths affected are passed to the CodeQL analysis, along with a custom analysis workflow if one is provided.
+#
+# For TypeScript/JavaScript, Python, and Ruby, and when using 'build-mode: none' for Java and C#, you can let the CodeQL Action handle the "build" step,
+# and only target the project that is being changed by the PR.
+#
+# For Kotlin, Swift and C/C++, or when not using 'build-mode: none' for Java and C#, you will need to manually build the project,
+# in a way that you can define in the optional custom analysis workflow.
+#
+# If you want to specifiy custom queries, you can do so in the custom analysis workflow.
+#
+# You can find an example of what that looks like in this repository at .github/workflows/custom-codeql-analysis.yml
+
+name: "CodeQL monorepo"
+
+on:
+  pull_request:
+    branches: ["main"]
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
+
+jobs:
+  changes:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
+      contents: read
+    outputs:
+      projects: ${{ steps.changes.outputs.projects }}
+    steps:
+        #   EX:
+        #   {
+        # "javascript": {
+        #     "babel-cli": [
+        #         "packages/babel-cli"
+        #     ],
+        #     "babel-code-frame": [
+        #         "packages/babel-code-frame"
+        #     ],
+        #     "babel-compat-data": [
+        #         "packages/babel-compat-data"
+        #     ], 
+        # ............ (for each directory under projects )
+      - name: Build language based projects JSON for each package in the monorepo
+        run: |
+          #!/bin/bash
+          json="{ \"javascript\": {"
+          for dir in packages/*/
+          do
+              folder_name=$(basename "$dir")
+              json+="\"$folder_name\": [ \"packages/$folder_name\" ],"
+          done
+          json="${json%,}}}"
+          echo -e "$json" > output.json
+          cat dynamic-projects.json
+
+      - name: Spot changes to projects
+        id: changes
+        uses: advanced-security/monorepo-code-scanning-action/changes@main
+        with:
+          projects-json: dynamic-projects.json
+
+  scan:
+    if: needs.changes.outputs.scan-required == true
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
+      security-events: write
+    needs: changes
+    strategy:
+      matrix:
+        project: ${{ fromJson(needs.changes.outputs.projects).projects }}
+    steps:
+      - name: Analyze code
+        uses: advanced-security/monorepo-code-scanning-action/scan@main
+        # custom-analysis: true
+
+  republish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+      actions: read
+    needs: changes
+    steps:
+      - name: Republish results on merge
+        uses: advanced-security/monorepo-code-scanning-action/republish-sarif@main
+        with:
+          projects: ${{ needs.changes.outputs.projects }}
+          merged-only: true
