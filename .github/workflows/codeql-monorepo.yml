@@ -33,45 +33,45 @@ jobs:
     outputs:
       projects: ${{ steps.changes.outputs.projects }}
     steps:
-      # Only checkout the latest commit and just the packages folder
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
-          sparse-checkout: "packages/*"
-          path: 'dynamic'
-        #   EX:
-        #   {
-        # "javascript": {
-        #     "babel-cli": [
-        #         "packages/babel-cli"
-        #     ],
-        #     "babel-code-frame": [
-        #         "packages/babel-code-frame"
-        #     ],
-        #     "babel-compat-data": [
-        #         "packages/babel-compat-data"
-        #     ], 
-        # ............ (for each directory under projects )
-      - name: Build language based projects JSON for each package in the monorepo
-        run: |
-          #!/bin/bash
-          cd dynamic
-          json="{ \"javascript\": {"
-          for dir in packages/*/
-          do
-              folder_name=$(basename "$dir")
-              json+="\"$folder_name\": [ \"packages/$folder_name\" ],"
-          done
-          json="${json%,}}}"
-          echo -e "$json" > dynamic-projects.json
-          cat dynamic-projects.json
+      # # Only checkout the latest commit and just the packages folder
+      # - name: Checkout repository
+      #   uses: actions/checkout@v4
+      #   with:
+      #     fetch-depth: 1
+      #     sparse-checkout: "packages/*"
+      #     path: 'dynamic'
+      #   #   EX:
+      #   #   {
+      #   # "javascript": {
+      #   #     "babel-cli": [
+      #   #         "packages/babel-cli"
+      #   #     ],
+      #   #     "babel-code-frame": [
+      #   #         "packages/babel-code-frame"
+      #   #     ],
+      #   #     "babel-compat-data": [
+      #   #         "packages/babel-compat-data"
+      #   #     ], 
+      #   # ............ (for each directory under projects )
+      # - name: Build language based projects JSON for each package in the monorepo
+      #   run: |
+      #     #!/bin/bash
+      #     cd dynamic
+      #     json="{ \"javascript\": {"
+      #     for dir in packages/*/
+      #     do
+      #         folder_name=$(basename "$dir")
+      #         json+="\"$folder_name\": [ \"packages/$folder_name\" ],"
+      #     done
+      #     json="${json%,}}}"
+      #     echo -e "$json" > dynamic-projects.json
+      #     cat dynamic-projects.json
 
       - name: Spot changes to projects
         id: changes
         uses: advanced-security/monorepo-code-scanning-action/changes@main
         with:
-          projects-json: dynamic/dynamic-projects.json
+          projects-json: monorepo-projects.json
 
   scan:
     if: needs.changes.outputs.scan-required == true
