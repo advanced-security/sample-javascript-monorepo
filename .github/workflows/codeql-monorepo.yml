@@ -87,7 +87,11 @@ jobs:
     steps:
       - name: Analyze code
         uses: advanced-security/monorepo-code-scanning-action/scan@main
+        # If you have a custom analysis workflow defined at .github/workflows/custom-codeql-analysis.yml, then set this to 'true' so that it is run.
         # custom-analysis: true
+
+# You must use the 'republish' step to republish the results of missing analyses from the target branch to the PR, to pass required checks.
+# It will also copy these results to the target branch on merge, so that the full results are available in the target branch.
 
   republish:
     runs-on: ubuntu-latest
@@ -97,8 +101,7 @@ jobs:
       actions: read
     needs: changes
     steps:
-      - name: Republish results on merge
+      - name: Republish results
         uses: advanced-security/monorepo-code-scanning-action/republish-sarif@main
         with:
           projects: ${{ needs.changes.outputs.projects }}
-#          merged-only: true
