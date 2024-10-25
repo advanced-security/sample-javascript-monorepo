@@ -42,7 +42,7 @@ jobs:
       #     path: 'dynamic'
       #   #   EX:
       #   #   {
-      #   # "javascript": {
+      #   # "javascript-typescript": {
       #   #     "babel-cli": [
       #   #         "packages/babel-cli"
       #   #     ],
@@ -57,7 +57,7 @@ jobs:
       #   run: |
       #     #!/bin/bash
       #     cd dynamic
-      #     json="{ \"javascript\": {"
+      #     json="{ \"javascript-typescript\": {"
       #     for dir in packages/*/
       #     do
       #         folder_name=$(basename "$dir")
