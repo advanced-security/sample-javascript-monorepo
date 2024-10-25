@@ -32,6 +32,7 @@ jobs:
       contents: read
     outputs:
       projects: ${{ steps.changes.outputs.projects }}
+      scan-required: ${{ steps.changes.outputs.scan-required }}
     steps:
       # # Only checkout the latest commit and just the packages folder
       # - name: Checkout repository
@@ -73,8 +74,12 @@ jobs:
         with:
           projects-json: monorepo-projects.json
 
+      - name: Print scan-required output
+        run: |
+          echo "Scan Required: ${{ steps.changes.outputs.scan-required }}"
+
   scan:
-    #if: needs.changes.outputs.scan-required == true
+    if: needs.changes.outputs.scan-required == true
     runs-on: ubuntu-latest
     permissions:
       contents: read
