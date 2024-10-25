@@ -57,6 +57,7 @@ jobs:
       - name: Build language based projects JSON for each package in the monorepo
         run: |
           #!/bin/bash
+          cd dynamic
           json="{ \"javascript\": {"
           for dir in packages/*/
           do
