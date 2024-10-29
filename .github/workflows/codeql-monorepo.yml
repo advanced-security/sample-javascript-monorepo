@@ -69,7 +69,7 @@ jobs:
 
       - name: Spot changes to projects
         id: changes
-        uses: advanced-security/monorepo-code-scanning-action/changes@main
+        uses: advanced-security/monorepo-code-scanning-action/changes@improvements
         with:
           projects-json: monorepo-projects.json
 
@@ -87,7 +87,7 @@ jobs:
         scan-required: ${{ steps.changes.outputs.scan-required }}
     steps:
       - name: Analyze code
-        uses: advanced-security/monorepo-code-scanning-action/scan@main
+        uses: advanced-security/monorepo-code-scanning-action/scan@improvements
         # If you have a custom analysis workflow defined at .github/workflows/custom-codeql-analysis.yml, then set this to 'true' so that it is run.
         # custom-analysis: true
 
@@ -103,6 +103,6 @@ jobs:
     needs: changes
     steps:
       - name: Republish results
-        uses: advanced-security/monorepo-code-scanning-action/republish-sarif@main
+        uses: advanced-security/monorepo-code-scanning-action/republish-sarif@improvements
         with:
           projects: ${{ needs.changes.outputs.projects }}
