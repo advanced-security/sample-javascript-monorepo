@@ -8,6 +8,7 @@ import {
   toRanges,
 } from "./util.ts";
 
+
 function buildFieldsReplacement(
   fields: t.ClassProperty[],
   scope: Scope,
