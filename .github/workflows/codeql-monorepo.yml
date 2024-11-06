@@ -19,10 +19,10 @@ on:
   pull_request:
     branches: ["main"]
     types:
-      - opened
-      - reopened
-      - synchronize
-      - closed
+      - opened      # scan new PRs
+      - reopened    # scan PRs that are reopened
+      - synchronize # scan newly pushed commits to PRs
+      - closed      # republish results from merged PRs
 
 jobs:
   changes:
@@ -75,7 +75,7 @@ jobs:
           projects-json: monorepo-projects.json
 
   scan:
-    #if: needs.changes.outputs.scan-required == true
+    if: needs.changes.outputs.scan-required == 'true'
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -85,7 +85,6 @@ jobs:
     strategy:
       matrix:
         project: ${{ fromJson(needs.changes.outputs.projects).projects }}
-        scan-required: ${{ steps.changes.outputs.scan-required }}
     steps:
       - name: Analyze code
         uses: advanced-security/monorepo-code-scanning-action/scan@main
