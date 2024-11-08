@@ -1,5 +1,6 @@
 {
     "javascript-typescript": {
+      "projects": {
         "babel-cli": [
             "packages/babel-cli"
         ],
@@ -475,4 +476,5 @@
             "packages/babel-types"
         ]
     }
+  }
 }
