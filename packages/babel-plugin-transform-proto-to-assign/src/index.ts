@@ -3,6 +3,7 @@ import { types as t, type File } from "@babel/core";
 
 export default declare(api => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   function isProtoKey(node: t.ObjectExpression["properties"][number]) {
     return (

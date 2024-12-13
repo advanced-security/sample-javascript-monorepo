@@ -28,6 +28,7 @@ type State = {
 };
 export default declare<State>(api => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   function makeTrace(
     fileNameIdentifier: t.Identifier,

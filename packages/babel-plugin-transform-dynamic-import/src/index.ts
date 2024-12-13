@@ -17,6 +17,7 @@ bundler handle dynamic imports.
 
 export default declare(api => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   return {
     name: "transform-dynamic-import",

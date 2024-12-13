@@ -5,6 +5,7 @@ import generateCode from "@babel/generator";
 
 export default declare(api => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   function commentFromString(comment: string | t.Comment): t.Comment {
     return typeof comment === "string"

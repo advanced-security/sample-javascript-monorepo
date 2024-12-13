@@ -8,6 +8,7 @@ import {
   toRanges,
 } from "./util.ts";
 
+
 function buildFieldsReplacement(
   fields: t.ClassProperty[],
   scope: Scope,
@@ -33,6 +34,7 @@ function buildFieldsReplacement(
 
 export default declare(api => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   const setPublicClassFields = api.assumption("setPublicClassFields");
 

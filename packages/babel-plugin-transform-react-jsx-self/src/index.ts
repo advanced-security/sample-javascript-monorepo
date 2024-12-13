@@ -71,6 +71,7 @@ function isThisAllowed(path: NodePath<t.JSXOpeningElement>) {
 
 export default declare(api => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   const visitor: Visitor = {
     JSXOpeningElement(path) {

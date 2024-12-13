@@ -20,6 +20,7 @@ function replacePropertySuper(
 
 export default declare(api => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
   const newLets = new Set<{
     scopePath: NodePath;
     id: t.Identifier;

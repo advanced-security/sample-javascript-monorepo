@@ -7,6 +7,7 @@ import rewriteForAwait from "./for-await.ts";
 
 export default declare(api => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   const yieldStarVisitor = visitors.environmentVisitor<PluginPass>({
     ArrowFunctionExpression(path) {

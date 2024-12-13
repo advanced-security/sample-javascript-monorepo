@@ -38,6 +38,7 @@ type ImportCache = WeakMap<t.Program, Cache>;
 
 export default declare<State>((api, options: Options) => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   const polyfillModuleName = v.validateStringOption(
     "polyfillModuleName",

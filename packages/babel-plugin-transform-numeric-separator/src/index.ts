@@ -18,6 +18,7 @@ function remover({ node }: NodePath<t.BigIntLiteral | t.NumericLiteral>) {
 
 export default declare(api => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   return {
     name: "transform-numeric-separator",
