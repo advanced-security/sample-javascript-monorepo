@@ -275,9 +275,12 @@ describe("@babel/register", function () {
           path.dirname(testFileLog),
         );
 
-        expect(output.trim()).toMatchInlineSnapshot(
-          `"It worked! function () {}"`,
-        );
+        expect(output.trim()).toMatchInlineSnapshot(`
+          "It worked! function () {}
+          (node:5130) ExperimentalWarning: CommonJS module /home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-core/lib/config/files/module-types.js is loading ES Module /home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-plugin-transform-modules-commonjs/lib/index.js using require().
+          Support for loading ES Module in require() is an experimental feature and might change at any time
+          (Use \`node --trace-warnings ...\` to show where the warning was created)"
+        `);
       });
 
       it("works with the --require flag", async () => {
@@ -286,9 +289,12 @@ describe("@babel/register", function () {
           path.dirname(testFileLog),
         );
 
-        expect(output.trim()).toMatchInlineSnapshot(
-          `"It worked! function () {}"`,
-        );
+        expect(output.trim()).toMatchInlineSnapshot(`
+          "It worked! function () {}
+          (node:5143) ExperimentalWarning: CommonJS module /home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-core/lib/config/files/module-types.js is loading ES Module /home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-plugin-transform-modules-commonjs/lib/index.js using require().
+          Support for loading ES Module in require() is an experimental feature and might change at any time
+          (Use \`node --trace-warnings ...\` to show where the warning was created)"
+        `);
       });
 
       it("works with the -r flag in NODE_OPTIONS", async () => {
@@ -302,9 +308,12 @@ describe("@babel/register", function () {
           },
         );
 
-        expect(output.trim()).toMatchInlineSnapshot(
-          `"It worked! function () {}"`,
-        );
+        expect(output.trim()).toMatchInlineSnapshot(`
+          "It worked! function () {}
+          (node:5166) ExperimentalWarning: CommonJS module /home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-core/lib/config/files/module-types.js is loading ES Module /home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-plugin-transform-modules-commonjs/lib/index.js using require().
+          Support for loading ES Module in require() is an experimental feature and might change at any time
+          (Use \`node --trace-warnings ...\` to show where the warning was created)"
+        `);
       });
 
       it("works with the --require flag in NODE_OPTIONS", async () => {
@@ -318,9 +327,12 @@ describe("@babel/register", function () {
           },
         );
 
-        expect(output.trim()).toMatchInlineSnapshot(
-          `"It worked! function () {}"`,
-        );
+        expect(output.trim()).toMatchInlineSnapshot(`
+          "It worked! function () {}
+          (node:5189) ExperimentalWarning: CommonJS module /home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-core/lib/config/files/module-types.js is loading ES Module /home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-plugin-transform-modules-commonjs/lib/index.js using require().
+          Support for loading ES Module in require() is an experimental feature and might change at any time
+          (Use \`node --trace-warnings ...\` to show where the warning was created)"
+        `);
       });
     });
 
