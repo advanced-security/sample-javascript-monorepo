@@ -19,10 +19,10 @@ on:
   pull_request:
     branches: ["main"]
     types:
-      - opened
-      - reopened
-      - synchronize
-      - closed
+      - opened      # scan new PRs
+      - reopened    # scan PRs that are reopened
+      - synchronize # scan newly pushed commits to PRs
+      - closed      # republish results from merged PRs
 
 jobs:
   changes:
@@ -79,7 +79,7 @@ jobs:
           echo "Scan Required: ${{ steps.changes.outputs.scan-required }}"
 
   scan:
-    if: needs.changes.outputs.scan-required == true
+    if: needs.changes.outputs.scan-required == 'true'
     runs-on: ubuntu-latest
     permissions:
       contents: read
