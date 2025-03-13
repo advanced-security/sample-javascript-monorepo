@@ -1,792 +1,792 @@
 {
     "javascript-typescript": {
       "projects": {
-        "babel-cli": {
+        "cli": {
           "paths": [
             "packages/babel-cli"
           ]
         },
-        "babel-code-frame": {
+        "code-frame": {
           "paths": [
             "packages/babel-code-frame"
           ]
         },
-        "babel-compat-data": {
+        "compat-data": {
           "paths": [
             "packages/babel-compat-data"
           ]
         },
-        "babel-core": {
+        "core": {
           "paths": [
             "packages/babel-core"
           ]
         },
-        "babel-generator": {
+        "generator": {
           "paths": [
             "packages/babel-generator"
           ]
         },
-        "babel-helper-annotate-as-pure": {
+        "helper-annotate-as-pure": {
           "paths": [
             "packages/babel-helper-annotate-as-pure"
           ]
         },
-        "babel-helper-builder-binary-assignment-operator-visitor": {
+        "helper-builder-binary-assignment-operator-visitor": {
           "paths": [
             "packages/babel-helper-builder-binary-assignment-operator-visitor"
           ]
         },
-        "babel-helper-builder-react-jsx": {
+        "helper-builder-react-jsx": {
           "paths": [
             "packages/babel-helper-builder-react-jsx"
           ]
         },
-        "babel-helper-check-duplicate-nodes": {
+        "helper-check-duplicate-nodes": {
           "paths": [
             "packages/babel-helper-check-duplicate-nodes"
           ]
         },
-        "babel-helper-compilation-targets": {
+        "helper-compilation-targets": {
           "paths": [
             "packages/babel-helper-compilation-targets"
           ]
         },
-        "babel-helper-create-class-features-plugin": {
+        "helper-create-class-features-plugin": {
           "paths": [
             "packages/babel-helper-create-class-features-plugin"
           ]
         },
-        "babel-helper-create-regexp-features-plugin": {
+        "helper-create-regexp-features-plugin": {
           "paths": [
             "packages/babel-helper-create-regexp-features-plugin"
           ]
         },
-        "babel-helper-fixtures": {
+        "helper-fixtures": {
           "paths": [
             "packages/babel-helper-fixtures"
           ]
         },
-        "babel-helper-import-to-platform-api": {
+        "helper-import-to-platform-api": {
           "paths": [
             "packages/babel-helper-import-to-platform-api"
           ]
         },
-        "babel-helper-member-expression-to-functions": {
+        "helper-member-expression-to-functions": {
           "paths": [
             "packages/babel-helper-member-expression-to-functions"
           ]
         },
-        "babel-helper-module-imports": {
+        "helper-module-imports": {
           "paths": [
             "packages/babel-helper-module-imports"
           ]
         },
-        "babel-helper-module-transforms": {
+        "helper-module-transforms": {
           "paths": [
             "packages/babel-helper-module-transforms"
           ]
         },
-        "babel-helper-optimise-call-expression": {
+        "helper-optimise-call-expression": {
           "paths": [
             "packages/babel-helper-optimise-call-expression"
           ]
         },
-        "babel-helper-plugin-test-runner": {
+        "helper-plugin-test-runner": {
           "paths": [
             "packages/babel-helper-plugin-test-runner"
           ]
         },
-        "babel-helper-plugin-utils": {
+        "helper-plugin-utils": {
           "paths": [
             "packages/babel-helper-plugin-utils"
           ]
         },
-        "babel-helper-remap-async-to-generator": {
+        "helper-remap-async-to-generator": {
           "paths": [
             "packages/babel-helper-remap-async-to-generator"
           ]
         },
-        "babel-helper-replace-supers": {
+        "helper-replace-supers": {
           "paths": [
             "packages/babel-helper-replace-supers"
           ]
         },
-        "babel-helper-simple-access": {
+        "helper-simple-access": {
           "paths": [
             "packages/babel-helper-simple-access"
           ]
         },
-        "babel-helper-skip-transparent-expression-wrappers": {
+        "helper-skip-transparent-expression-wrappers": {
           "paths": [
             "packages/babel-helper-skip-transparent-expression-wrappers"
           ]
         },
-        "babel-helper-string-parser": {
+        "helper-string-parser": {
           "paths": [
             "packages/babel-helper-string-parser"
           ]
         },
-        "babel-helper-transform-fixture-test-runner": {
+        "helper-transform-fixture-test-runner": {
           "paths": [
             "packages/babel-helper-transform-fixture-test-runner"
           ]
         },
-        "babel-helper-validator-identifier": {
+        "helper-validator-identifier": {
           "paths": [
             "packages/babel-helper-validator-identifier"
           ]
         },
-        "babel-helper-validator-option": {
+        "helper-validator-option": {
           "paths": [
             "packages/babel-helper-validator-option"
           ]
         },
-        "babel-helper-wrap-function": {
+        "helper-wrap-function": {
           "paths": [
             "packages/babel-helper-wrap-function"
           ]
         },
-        "babel-helpers": {
+        "helpers": {
           "paths": [
             "packages/babel-helpers"
           ]
         },
-        "babel-node": {
+        "node": {
           "paths": [
             "packages/babel-node"
           ]
         },
-        "babel-parser": {
+        "parser": {
           "paths": [
             "packages/babel-parser"
           ]
         },
-        "babel-plugin-bugfix-firefox-class-in-computed-class-key": {
+        "plugin-bugfix-firefox-class-in-computed-class-key": {
           "paths": [
             "packages/babel-plugin-bugfix-firefox-class-in-computed-class-key"
           ]
         },
-        "babel-plugin-bugfix-safari-class-field-initializer-scope": {
+        "plugin-bugfix-safari-class-field-initializer-scope": {
           "paths": [
             "packages/babel-plugin-bugfix-safari-class-field-initializer-scope"
           ]
         },
-        "babel-plugin-bugfix-safari-id-destructuring-collision-in-function-expression": {
+        "plugin-bugfix-safari-id-destructuring-collision-in-function-expression": {
           "paths": [
             "packages/babel-plugin-bugfix-safari-id-destructuring-collision-in-function-expression"
           ]
         },
-        "babel-plugin-bugfix-v8-spread-parameters-in-optional-chaining": {
+        "plugin-bugfix-v8-spread-parameters-in-optional-chaining": {
           "paths": [
             "packages/babel-plugin-bugfix-v8-spread-parameters-in-optional-chaining"
           ]
         },
-        "babel-plugin-bugfix-v8-static-class-fields-redefine-readonly": {
+        "plugin-bugfix-v8-static-class-fields-redefine-readonly": {
           "paths": [
             "packages/babel-plugin-bugfix-v8-static-class-fields-redefine-readonly"
           ]
         },
-        "babel-plugin-external-helpers": {
+        "plugin-external-helpers": {
           "paths": [
             "packages/babel-plugin-external-helpers"
           ]
         },
-        "babel-plugin-proposal-async-do-expressions": {
+        "plugin-proposal-async-do-expressions": {
           "paths": [
             "packages/babel-plugin-proposal-async-do-expressions"
           ]
         },
-        "babel-plugin-proposal-decorators": {
+        "plugin-proposal-decorators": {
           "paths": [
             "packages/babel-plugin-proposal-decorators"
           ]
         },
-        "babel-plugin-proposal-destructuring-private": {
+        "plugin-proposal-destructuring-private": {
           "paths": [
             "packages/babel-plugin-proposal-destructuring-private"
           ]
         },
-        "babel-plugin-proposal-do-expressions": {
+        "plugin-proposal-do-expressions": {
           "paths": [
             "packages/babel-plugin-proposal-do-expressions"
           ]
         },
-        "babel-plugin-proposal-explicit-resource-management": {
+        "plugin-proposal-explicit-resource-management": {
           "paths": [
             "packages/babel-plugin-proposal-explicit-resource-management"
           ]
         },
-        "babel-plugin-proposal-export-default-from": {
+        "plugin-proposal-export-default-from": {
           "paths": [
             "packages/babel-plugin-proposal-export-default-from"
           ]
         },
-        "babel-plugin-proposal-function-bind": {
+        "plugin-proposal-function-bind": {
           "paths": [
             "packages/babel-plugin-proposal-function-bind"
           ]
         },
-        "babel-plugin-proposal-function-sent": {
+        "plugin-proposal-function-sent": {
           "paths": [
             "packages/babel-plugin-proposal-function-sent"
           ]
         },
-        "babel-plugin-proposal-import-attributes-to-assertions": {
+        "plugin-proposal-import-attributes-to-assertions": {
           "paths": [
             "packages/babel-plugin-proposal-import-attributes-to-assertions"
           ]
         },
-        "babel-plugin-proposal-import-defer": {
+        "plugin-proposal-import-defer": {
           "paths": [
             "packages/babel-plugin-proposal-import-defer"
           ]
         },
-        "babel-plugin-proposal-import-wasm-source": {
+        "plugin-proposal-import-wasm-source": {
           "paths": [
             "packages/babel-plugin-proposal-import-wasm-source"
           ]
         },
-        "babel-plugin-proposal-optional-chaining-assign": {
+        "plugin-proposal-optional-chaining-assign": {
           "paths": [
             "packages/babel-plugin-proposal-optional-chaining-assign"
           ]
         },
-        "babel-plugin-proposal-partial-application": {
+        "plugin-proposal-partial-application": {
           "paths": [
             "packages/babel-plugin-proposal-partial-application"
           ]
         },
-        "babel-plugin-proposal-pipeline-operator": {
+        "plugin-proposal-pipeline-operator": {
           "paths": [
             "packages/babel-plugin-proposal-pipeline-operator"
           ]
         },
-        "babel-plugin-proposal-record-and-tuple": {
+        "plugin-proposal-record-and-tuple": {
           "paths": [
             "packages/babel-plugin-proposal-record-and-tuple"
           ]
         },
-        "babel-plugin-proposal-throw-expressions": {
+        "plugin-proposal-throw-expressions": {
           "paths": [
             "packages/babel-plugin-proposal-throw-expressions"
           ]
         },
-        "babel-plugin-syntax-async-do-expressions": {
+        "plugin-syntax-async-do-expressions": {
           "paths": [
             "packages/babel-plugin-syntax-async-do-expressions"
           ]
         },
-        "babel-plugin-syntax-decorators": {
+        "plugin-syntax-decorators": {
           "paths": [
             "packages/babel-plugin-syntax-decorators"
           ]
         },
-        "babel-plugin-syntax-destructuring-private": {
+        "plugin-syntax-destructuring-private": {
           "paths": [
             "packages/babel-plugin-syntax-destructuring-private"
           ]
         },
-        "babel-plugin-syntax-do-expressions": {
+        "plugin-syntax-do-expressions": {
           "paths": [
             "packages/babel-plugin-syntax-do-expressions"
           ]
         },
-        "babel-plugin-syntax-explicit-resource-management": {
+        "plugin-syntax-explicit-resource-management": {
           "paths": [
             "packages/babel-plugin-syntax-explicit-resource-management"
           ]
         },
-        "babel-plugin-syntax-export-default-from": {
+        "plugin-syntax-export-default-from": {
           "paths": [
             "packages/babel-plugin-syntax-export-default-from"
           ]
         },
-        "babel-plugin-syntax-flow": {
+        "plugin-syntax-flow": {
           "paths": [
             "packages/babel-plugin-syntax-flow"
           ]
         },
-        "babel-plugin-syntax-function-bind": {
+        "plugin-syntax-function-bind": {
           "paths": [
             "packages/babel-plugin-syntax-function-bind"
           ]
         },
-        "babel-plugin-syntax-function-sent": {
+        "plugin-syntax-function-sent": {
           "paths": [
             "packages/babel-plugin-syntax-function-sent"
           ]
         },
-        "babel-plugin-syntax-import-assertions": {
+        "plugin-syntax-import-assertions": {
           "paths": [
             "packages/babel-plugin-syntax-import-assertions"
           ]
         },
-        "babel-plugin-syntax-import-attributes": {
+        "plugin-syntax-import-attributes": {
           "paths": [
             "packages/babel-plugin-syntax-import-attributes"
           ]
         },
-        "babel-plugin-syntax-import-defer": {
+        "plugin-syntax-import-defer": {
           "paths": [
             "packages/babel-plugin-syntax-import-defer"
           ]
         },
-        "babel-plugin-syntax-import-source": {
+        "plugin-syntax-import-source": {
           "paths": [
             "packages/babel-plugin-syntax-import-source"
           ]
         },
-        "babel-plugin-syntax-jsx": {
+        "plugin-syntax-jsx": {
           "paths": [
             "packages/babel-plugin-syntax-jsx"
           ]
         },
-        "babel-plugin-syntax-module-blocks": {
+        "plugin-syntax-module-blocks": {
           "paths": [
             "packages/babel-plugin-syntax-module-blocks"
           ]
         },
-        "babel-plugin-syntax-optional-chaining-assign": {
+        "plugin-syntax-optional-chaining-assign": {
           "paths": [
             "packages/babel-plugin-syntax-optional-chaining-assign"
           ]
         },
-        "babel-plugin-syntax-partial-application": {
+        "plugin-syntax-partial-application": {
           "paths": [
             "packages/babel-plugin-syntax-partial-application"
           ]
         },
-        "babel-plugin-syntax-pipeline-operator": {
+        "plugin-syntax-pipeline-operator": {
           "paths": [
             "packages/babel-plugin-syntax-pipeline-operator"
           ]
         },
-        "babel-plugin-syntax-record-and-tuple": {
+        "plugin-syntax-record-and-tuple": {
           "paths": [
             "packages/babel-plugin-syntax-record-and-tuple"
           ]
         },
-        "babel-plugin-syntax-throw-expressions": {
+        "plugin-syntax-throw-expressions": {
           "paths": [
             "packages/babel-plugin-syntax-throw-expressions"
           ]
         },
-        "babel-plugin-syntax-typescript": {
+        "plugin-syntax-typescript": {
           "paths": [
             "packages/babel-plugin-syntax-typescript"
           ]
         },
-        "babel-plugin-transform-arrow-functions": {
+        "plugin-transform-arrow-functions": {
           "paths": [
             "packages/babel-plugin-transform-arrow-functions"
           ]
         },
-        "babel-plugin-transform-async-generator-functions": {
+        "plugin-transform-async-generator-functions": {
           "paths": [
             "packages/babel-plugin-transform-async-generator-functions"
           ]
         },
-        "babel-plugin-transform-async-to-generator": {
+        "plugin-transform-async-to-generator": {
           "paths": [
             "packages/babel-plugin-transform-async-to-generator"
           ]
         },
-        "babel-plugin-transform-block-scoped-functions": {
+        "plugin-transform-block-scoped-functions": {
           "paths": [
             "packages/babel-plugin-transform-block-scoped-functions"
           ]
         },
-        "babel-plugin-transform-block-scoping": {
+        "plugin-transform-block-scoping": {
           "paths": [
             "packages/babel-plugin-transform-block-scoping"
           ]
         },
-        "babel-plugin-transform-class-properties": {
+        "plugin-transform-class-properties": {
           "paths": [
             "packages/babel-plugin-transform-class-properties"
           ]
         },
-        "babel-plugin-transform-class-static-block": {
+        "plugin-transform-class-static-block": {
           "paths": [
             "packages/babel-plugin-transform-class-static-block"
           ]
         },
-        "babel-plugin-transform-classes": {
+        "plugin-transform-classes": {
           "paths": [
             "packages/babel-plugin-transform-classes"
           ]
         },
-        "babel-plugin-transform-computed-properties": {
+        "plugin-transform-computed-properties": {
           "paths": [
             "packages/babel-plugin-transform-computed-properties"
           ]
         },
-        "babel-plugin-transform-destructuring": {
+        "plugin-transform-destructuring": {
           "paths": [
             "packages/babel-plugin-transform-destructuring"
           ]
         },
-        "babel-plugin-transform-dotall-regex": {
+        "plugin-transform-dotall-regex": {
           "paths": [
             "packages/babel-plugin-transform-dotall-regex"
           ]
         },
-        "babel-plugin-transform-duplicate-keys": {
+        "plugin-transform-duplicate-keys": {
           "paths": [
             "packages/babel-plugin-transform-duplicate-keys"
           ]
         },
-        "babel-plugin-transform-duplicate-named-capturing-groups-regex": {
+        "plugin-transform-duplicate-named-capturing-groups-regex": {
           "paths": [
             "packages/babel-plugin-transform-duplicate-named-capturing-groups-regex"
           ]
         },
-        "babel-plugin-transform-dynamic-import": {
+        "plugin-transform-dynamic-import": {
           "paths": [
             "packages/babel-plugin-transform-dynamic-import"
           ]
         },
-        "babel-plugin-transform-exponentiation-operator": {
+        "plugin-transform-exponentiation-operator": {
           "paths": [
             "packages/babel-plugin-transform-exponentiation-operator"
           ]
         },
-        "babel-plugin-transform-export-namespace-from": {
+        "plugin-transform-export-namespace-from": {
           "paths": [
             "packages/babel-plugin-transform-export-namespace-from"
           ]
         },
-        "babel-plugin-transform-flow-comments": {
+        "plugin-transform-flow-comments": {
           "paths": [
             "packages/babel-plugin-transform-flow-comments"
           ]
         },
-        "babel-plugin-transform-flow-strip-types": {
+        "plugin-transform-flow-strip-types": {
           "paths": [
             "packages/babel-plugin-transform-flow-strip-types"
           ]
         },
-        "babel-plugin-transform-for-of": {
+        "plugin-transform-for-of": {
           "paths": [
             "packages/babel-plugin-transform-for-of"
           ]
         },
-        "babel-plugin-transform-function-name": {
+        "plugin-transform-function-name": {
           "paths": [
             "packages/babel-plugin-transform-function-name"
           ]
         },
-        "babel-plugin-transform-instanceof": {
+        "plugin-transform-instanceof": {
           "paths": [
             "packages/babel-plugin-transform-instanceof"
           ]
         },
-        "babel-plugin-transform-jscript": {
+        "plugin-transform-jscript": {
           "paths": [
             "packages/babel-plugin-transform-jscript"
           ]
         },
-        "babel-plugin-transform-json-modules": {
+        "plugin-transform-json-modules": {
           "paths": [
             "packages/babel-plugin-transform-json-modules"
           ]
         },
-        "babel-plugin-transform-json-strings": {
+        "plugin-transform-json-strings": {
           "paths": [
             "packages/babel-plugin-transform-json-strings"
           ]
         },
-        "babel-plugin-transform-literals": {
+        "plugin-transform-literals": {
           "paths": [
             "packages/babel-plugin-transform-literals"
           ]
         },
-        "babel-plugin-transform-logical-assignment-operators": {
+        "plugin-transform-logical-assignment-operators": {
           "paths": [
             "packages/babel-plugin-transform-logical-assignment-operators"
           ]
         },
-        "babel-plugin-transform-member-expression-literals": {
+        "plugin-transform-member-expression-literals": {
           "paths": [
             "packages/babel-plugin-transform-member-expression-literals"
           ]
         },
-        "babel-plugin-transform-modules-amd": {
+        "plugin-transform-modules-amd": {
           "paths": [
             "packages/babel-plugin-transform-modules-amd"
           ]
         },
-        "babel-plugin-transform-modules-commonjs": {
+        "plugin-transform-modules-commonjs": {
           "paths": [
             "packages/babel-plugin-transform-modules-commonjs"
           ]
         },
-        "babel-plugin-transform-modules-systemjs": {
+        "plugin-transform-modules-systemjs": {
           "paths": [
             "packages/babel-plugin-transform-modules-systemjs"
           ]
         },
-        "babel-plugin-transform-modules-umd": {
+        "plugin-transform-modules-umd": {
           "paths": [
             "packages/babel-plugin-transform-modules-umd"
           ]
         },
-        "babel-plugin-transform-named-capturing-groups-regex": {
+        "plugin-transform-named-capturing-groups-regex": {
           "paths": [
             "packages/babel-plugin-transform-named-capturing-groups-regex"
           ]
         },
-        "babel-plugin-transform-new-target": {
+        "plugin-transform-new-target": {
           "paths": [
             "packages/babel-plugin-transform-new-target"
           ]
         },
-        "babel-plugin-transform-nullish-coalescing-operator": {
+        "plugin-transform-nullish-coalescing-operator": {
           "paths": [
             "packages/babel-plugin-transform-nullish-coalescing-operator"
           ]
         },
-        "babel-plugin-transform-numeric-separator": {
+        "plugin-transform-numeric-separator": {
           "paths": [
             "packages/babel-plugin-transform-numeric-separator"
           ]
         },
-        "babel-plugin-transform-object-assign": {
+        "plugin-transform-object-assign": {
           "paths": [
             "packages/babel-plugin-transform-object-assign"
           ]
         },
-        "babel-plugin-transform-object-rest-spread": {
+        "plugin-transform-object-rest-spread": {
           "paths": [
             "packages/babel-plugin-transform-object-rest-spread"
           ]
         },
-        "babel-plugin-transform-object-set-prototype-of-to-assign": {
+        "plugin-transform-object-set-prototype-of-to-assign": {
           "paths": [
             "packages/babel-plugin-transform-object-set-prototype-of-to-assign"
           ]
         },
-        "babel-plugin-transform-object-super": {
+        "plugin-transform-object-super": {
           "paths": [
             "packages/babel-plugin-transform-object-super"
           ]
         },
-        "babel-plugin-transform-optional-catch-binding": {
+        "plugin-transform-optional-catch-binding": {
           "paths": [
             "packages/babel-plugin-transform-optional-catch-binding"
           ]
         },
-        "babel-plugin-transform-optional-chaining": {
+        "plugin-transform-optional-chaining": {
           "paths": [
             "packages/babel-plugin-transform-optional-chaining"
           ]
         },
-        "babel-plugin-transform-parameters": {
+        "plugin-transform-parameters": {
           "paths": [
             "packages/babel-plugin-transform-parameters"
           ]
         },
-        "babel-plugin-transform-private-methods": {
+        "plugin-transform-private-methods": {
           "paths": [
             "packages/babel-plugin-transform-private-methods"
           ]
         },
-        "babel-plugin-transform-private-property-in-object": {
+        "plugin-transform-private-property-in-object": {
           "paths": [
             "packages/babel-plugin-transform-private-property-in-object"
           ]
         },
-        "babel-plugin-transform-property-literals": {
+        "plugin-transform-property-literals": {
           "paths": [
             "packages/babel-plugin-transform-property-literals"
           ]
         },
-        "babel-plugin-transform-property-mutators": {
+        "plugin-transform-property-mutators": {
           "paths": [
             "packages/babel-plugin-transform-property-mutators"
           ]
         },
-        "babel-plugin-transform-proto-to-assign": {
+        "plugin-transform-proto-to-assign": {
           "paths": [
             "packages/babel-plugin-transform-proto-to-assign"
           ]
         },
-        "babel-plugin-transform-react-constant-elements": {
+        "plugin-transform-react-constant-elements": {
           "paths": [
             "packages/babel-plugin-transform-react-constant-elements"
           ]
         },
-        "babel-plugin-transform-react-display-name": {
+        "plugin-transform-react-display-name": {
           "paths": [
             "packages/babel-plugin-transform-react-display-name"
           ]
         },
-        "babel-plugin-transform-react-inline-elements": {
+        "plugin-transform-react-inline-elements": {
           "paths": [
             "packages/babel-plugin-transform-react-inline-elements"
           ]
         },
-        "babel-plugin-transform-react-jsx-compat": {
+        "plugin-transform-react-jsx-compat": {
           "paths": [
             "packages/babel-plugin-transform-react-jsx-compat"
           ]
         },
-        "babel-plugin-transform-react-jsx-development": {
+        "plugin-transform-react-jsx-development": {
           "paths": [
             "packages/babel-plugin-transform-react-jsx-development"
           ]
         },
-        "babel-plugin-transform-react-jsx-self": {
+        "plugin-transform-react-jsx-self": {
           "paths": [
             "packages/babel-plugin-transform-react-jsx-self"
           ]
         },
-        "babel-plugin-transform-react-jsx-source": {
+        "plugin-transform-react-jsx-source": {
           "paths": [
             "packages/babel-plugin-transform-react-jsx-source"
           ]
         },
-        "babel-plugin-transform-react-jsx": {
+        "plugin-transform-react-jsx": {
           "paths": [
             "packages/babel-plugin-transform-react-jsx"
           ]
         },
-        "babel-plugin-transform-react-pure-annotations": {
+        "plugin-transform-react-pure-annotations": {
           "paths": [
             "packages/babel-plugin-transform-react-pure-annotations"
           ]
         },
-        "babel-plugin-transform-regenerator": {
+        "plugin-transform-regenerator": {
           "paths": [
             "packages/babel-plugin-transform-regenerator"
           ]
         },
-        "babel-plugin-transform-regexp-modifiers": {
+        "plugin-transform-regexp-modifiers": {
           "paths": [
             "packages/babel-plugin-transform-regexp-modifiers"
           ]
         },
-        "babel-plugin-transform-reserved-words": {
+        "plugin-transform-reserved-words": {
           "paths": [
             "packages/babel-plugin-transform-reserved-words"
           ]
         },
-        "babel-plugin-transform-runtime": {
+        "plugin-transform-runtime": {
           "paths": [
             "packages/babel-plugin-transform-runtime"
           ]
         },
-        "babel-plugin-transform-shorthand-properties": {
+        "plugin-transform-shorthand-properties": {
           "paths": [
             "packages/babel-plugin-transform-shorthand-properties"
           ]
         },
-        "babel-plugin-transform-spread": {
+        "plugin-transform-spread": {
           "paths": [
             "packages/babel-plugin-transform-spread"
           ]
         },
-        "babel-plugin-transform-sticky-regex": {
+        "plugin-transform-sticky-regex": {
           "paths": [
             "packages/babel-plugin-transform-sticky-regex"
           ]
         },
-        "babel-plugin-transform-strict-mode": {
+        "plugin-transform-strict-mode": {
           "paths": [
             "packages/babel-plugin-transform-strict-mode"
           ]
         },
-        "babel-plugin-transform-template-literals": {
+        "plugin-transform-template-literals": {
           "paths": [
             "packages/babel-plugin-transform-template-literals"
           ]
         },
-        "babel-plugin-transform-typeof-symbol": {
+        "plugin-transform-typeof-symbol": {
           "paths": [
             "packages/babel-plugin-transform-typeof-symbol"
           ]
         },
-        "babel-plugin-transform-typescript": {
+        "plugin-transform-typescript": {
           "paths": [
             "packages/babel-plugin-transform-typescript"
           ]
         },
-        "babel-plugin-transform-unicode-escapes": {
+        "plugin-transform-unicode-escapes": {
           "paths": [
             "packages/babel-plugin-transform-unicode-escapes"
           ]
         },
-        "babel-plugin-transform-unicode-property-regex": {
+        "plugin-transform-unicode-property-regex": {
           "paths": [
             "packages/babel-plugin-transform-unicode-property-regex"
           ]
         },
-        "babel-plugin-transform-unicode-regex": {
+        "plugin-transform-unicode-regex": {
           "paths": [
             "packages/babel-plugin-transform-unicode-regex"
           ]
         },
-        "babel-plugin-transform-unicode-sets-regex": {
+        "plugin-transform-unicode-sets-regex": {
           "paths": [
             "packages/babel-plugin-transform-unicode-sets-regex"
           ]
         },
-        "babel-preset-env": {
+        "preset-env": {
           "paths": [
             "packages/babel-preset-env"
           ]
         },
-        "babel-preset-flow": {
+        "preset-flow": {
           "paths": [
             "packages/babel-preset-flow"
           ]
         },
-        "babel-preset-react": {
+        "preset-react": {
           "paths": [
             "packages/babel-preset-react"
           ]
         },
-        "babel-preset-typescript": {
+        "preset-typescript": {
           "paths": [
             "packages/babel-preset-typescript"
           ]
         },
-        "babel-register": {
+        "register": {
           "paths": [
             "packages/babel-register"
           ]
         },
-        "babel-runtime-corejs2": {
+        "runtime-corejs2": {
           "paths": [
             "packages/babel-runtime-corejs2"
           ]
         },
-        "babel-runtime-corejs3": {
+        "runtime-corejs3": {
           "paths": [
             "packages/babel-runtime-corejs3"
           ]
         },
-        "babel-runtime": {
+        "runtime": {
           "paths": [
             "packages/babel-runtime"
           ]
         },
-        "babel-standalone": {
+        "standalone": {
           "paths": [
             "packages/babel-standalone"
           ]
         },
-        "babel-template": {
+        "template": {
           "paths": [
             "packages/babel-template"
           ]
         },
-        "babel-traverse": {
+        "traverse": {
           "paths": [
             "packages/babel-traverse"
           ]
         },
-        "babel-types": {
+        "types": {
           "paths": [
             "packages/babel-types"
           ]
