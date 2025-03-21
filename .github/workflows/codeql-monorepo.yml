@@ -87,7 +87,7 @@ jobs:
         project: ${{ fromJson(needs.changes.outputs.projects).projects }}
     steps:
       - name: Analyze code
-        uses: advanced-security/monorepo-code-scanning-action/scan@annotate-sarif
+        uses: advanced-security/monorepo-code-scanning-action/scan@annotate-sarif-fixes
         # If you have a custom analysis workflow defined at .github/workflows/custom-codeql-analysis.yml, then set this to 'true' so that it is run.
         # custom-analysis: true
 
