@@ -32,7 +32,7 @@ jobs:
     steps:
       - name: Scan whole repo, split up by project
         id: whole-repo
-        uses: advanced-security/monorepo-code-scanning-action/whole-repo@main
+        uses: advanced-security/monorepo-code-scanning-action/whole-repo@support-more-codeql-aliases
         with:
           projects-json: monorepo-projects.json
 
@@ -48,4 +48,4 @@ jobs:
         project: ${{ fromJson(needs.whole-repo.outputs.projects).projects }}
     steps:
       - name: Analyze code
-        uses: advanced-security/monorepo-code-scanning-action/scan@main
+        uses: advanced-security/monorepo-code-scanning-action/scan@support-more-codeql-aliases
