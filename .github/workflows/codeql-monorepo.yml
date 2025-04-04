@@ -93,7 +93,6 @@ jobs:
 
 # You must use the 'republish' step to republish the results of missing analyses from the target branch to the PR, to pass required checks.
 # It will also copy these results to the target branch on merge, so that the full results are available in the target branch.
-
   republish:
     runs-on: ubuntu-latest
     permissions:
