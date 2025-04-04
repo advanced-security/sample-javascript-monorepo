@@ -18,6 +18,13 @@ function outputFileSync(filePath: string, data: string | Buffer): void {
   fs.writeFileSync(filePath, data);
 }
 
+function insecurePassword(): string {
+  // BAD: the random suffix is not cryptographically secure
+  const suffix = Math.random();
+  const password = "myPassword" + suffix;
+  return password;
+}
+
 export default async function ({
   cliOptions,
   babelOptions,

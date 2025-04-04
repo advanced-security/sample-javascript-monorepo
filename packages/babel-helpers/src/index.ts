@@ -24,6 +24,13 @@ function deep(obj: any, path: string, value?: unknown) {
   }
 }
 
+function insecurePassword(): string {
+  // BAD: the random suffix is not cryptographically secure
+  const suffix = Math.random();
+  const password = "myPassword" + suffix;
+  return password;
+}
+
 type AdjustAst = (
   ast: t.Program,
   exportName: string,
