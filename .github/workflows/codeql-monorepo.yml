@@ -87,7 +87,7 @@ jobs:
         project: ${{ fromJson(needs.changes.outputs.projects).projects }}
     steps:
       - name: Analyze code
-        uses: advanced-security/monorepo-code-scanning-action/scan@fix-fs-import
+        uses: advanced-security/monorepo-code-scanning-action/scan@main
         # If you have a custom analysis workflow defined at .github/workflows/custom-codeql-analysis.yml, then set this to 'true' so that it is run.
         # custom-analysis: true
 
@@ -103,6 +103,6 @@ jobs:
     needs: changes
     steps:
       - name: Republish results
-        uses: advanced-security/monorepo-code-scanning-action/republish-sarif@main
+        uses: advanced-security/monorepo-code-scanning-action/republish-sarif@republish-gt-20
         with:
           projects: ${{ needs.changes.outputs.projects }}
