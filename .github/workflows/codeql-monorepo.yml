@@ -94,7 +94,6 @@ jobs:
 
 # You must use the 'republish' step to republish the results of missing analyses from the target branch to the PR, to pass required checks.
 # It will also copy these results to the target branch on merge, so that the full results are available in the target branch.
-
   republish:
     runs-on: ubuntu-latest
     permissions:
@@ -104,6 +103,6 @@ jobs:
     needs: changes
     steps:
       - name: Republish results
-        uses: advanced-security/monorepo-code-scanning-action/republish-sarif@main
+        uses: advanced-security/monorepo-code-scanning-action/republish-sarif@republish-gt-20
         with:
           projects: ${{ needs.changes.outputs.projects }}
