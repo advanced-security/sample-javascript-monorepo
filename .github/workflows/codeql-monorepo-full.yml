@@ -35,6 +35,7 @@ jobs:
         uses: advanced-security/monorepo-code-scanning-action/whole-repo@main
         with:
           projects-json: monorepo-projects.json
+          queries: security-extended
 
   scan:
     runs-on: ubuntu-latest
