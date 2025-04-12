@@ -3,6 +3,7 @@ import { types as t, type Scope } from "@babel/core";
 
 export default declare(api => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   /**
    * a function to figure out if a call expression has

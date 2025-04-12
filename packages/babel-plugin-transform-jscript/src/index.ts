@@ -3,6 +3,7 @@ import { types as t } from "@babel/core";
 
 export default declare(api => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   return {
     name: "transform-jscript",

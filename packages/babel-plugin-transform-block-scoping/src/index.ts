@@ -18,6 +18,7 @@ export interface Options {
 
 export default declare((api, opts: Options) => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   const { throwIfClosureRequired = false, tdz: tdzEnabled = false } = opts;
   if (typeof throwIfClosureRequired !== "boolean") {

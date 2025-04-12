@@ -4,6 +4,7 @@ import normalizeOptions from "./normalize-options.ts";
 
 export default declarePreset((api, opts) => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
   const {
     all,
     allowDeclareFields,

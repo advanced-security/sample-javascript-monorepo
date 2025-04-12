@@ -6,6 +6,7 @@ export interface Options {
 
 export default declare((api, options: Options) => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   // When enabled and plugins includes flow, all files should be parsed as if
   // the @flow pragma was provided.

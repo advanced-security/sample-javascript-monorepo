@@ -176,6 +176,7 @@ type ReassignmentVisitorState = {
 
 export default declare<PluginState>((api, options: Options) => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   const { systemGlobal = "System", allowTopLevelThis = false } = options;
   const reassignmentVisited = new WeakSet();

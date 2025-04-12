@@ -4,6 +4,7 @@ import { types as t, type Visitor } from "@babel/core";
 
 export default declare(api => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   const isFunctionSent = (node: t.MetaProperty) =>
     t.isIdentifier(node.meta, { name: "function" }) &&
