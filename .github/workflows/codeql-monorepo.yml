@@ -70,7 +70,7 @@ jobs:
 
       - name: Spot changes to projects
         id: changes
-        uses: advanced-security/monorepo-code-scanning-action/changes@main
+        uses: advanced-security/monorepo-code-scanning-action/changes@paths-ignore
         with:
           projects-json: monorepo-projects.json
           queries: security-extended
