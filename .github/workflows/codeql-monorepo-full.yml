@@ -32,7 +32,7 @@ jobs:
     steps:
       - name: Scan whole repo, split up by project
         id: whole-repo
-        uses: advanced-security/monorepo-code-scanning-action/whole-repo@main
+        uses: advanced-security/monorepo-code-scanning-action/whole-repo@paths-ignore
         with:
           projects-json: monorepo-projects.json
           queries: security-extended
