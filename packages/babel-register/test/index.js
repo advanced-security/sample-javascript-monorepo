@@ -275,9 +275,20 @@ describe("@babel/register", function () {
           path.dirname(testFileLog),
         );
 
-        expect(output.trim()).toMatchInlineSnapshot(
-          `"It worked! function () {}"`,
-        );
+        expect(output.trim()).toMatchInlineSnapshot(`
+          "/home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-register/lib/worker-client.js:52
+                if (message.error) throw Object.assign(message.error, message.errorData);else return message.result;
+                                   ^
+
+          ReferenceError: require is not defined in ES module scope, you can use import instead
+          This file is being treated as an ES module because it has a '.js' file extension and '/home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-core/lib/package.json' contains \\"type\\": \\"module\\". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+              at file:///home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-code-frame/lib/index.js:5:21
+              at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+              at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+              at async MessagePort.<anonymous> (/home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-register/lib/worker/index.js:14:21)
+
+          Node.js v22.15.0"
+        `);
       });
 
       it("works with the --require flag", async () => {
@@ -286,9 +297,20 @@ describe("@babel/register", function () {
           path.dirname(testFileLog),
         );
 
-        expect(output.trim()).toMatchInlineSnapshot(
-          `"It worked! function () {}"`,
-        );
+        expect(output.trim()).toMatchInlineSnapshot(`
+          "/home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-register/lib/worker-client.js:52
+                if (message.error) throw Object.assign(message.error, message.errorData);else return message.result;
+                                   ^
+
+          ReferenceError: require is not defined in ES module scope, you can use import instead
+          This file is being treated as an ES module because it has a '.js' file extension and '/home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-core/lib/package.json' contains \\"type\\": \\"module\\". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+              at file:///home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-code-frame/lib/index.js:5:21
+              at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+              at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+              at async MessagePort.<anonymous> (/home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-register/lib/worker/index.js:14:21)
+
+          Node.js v22.15.0"
+        `);
       });
 
       it("works with the -r flag in NODE_OPTIONS", async () => {
@@ -302,9 +324,20 @@ describe("@babel/register", function () {
           },
         );
 
-        expect(output.trim()).toMatchInlineSnapshot(
-          `"It worked! function () {}"`,
-        );
+        expect(output.trim()).toMatchInlineSnapshot(`
+          "/home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-register/lib/worker-client.js:52
+                if (message.error) throw Object.assign(message.error, message.errorData);else return message.result;
+                                   ^
+
+          ReferenceError: require is not defined in ES module scope, you can use import instead
+          This file is being treated as an ES module because it has a '.js' file extension and '/home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-core/lib/package.json' contains \\"type\\": \\"module\\". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+              at file:///home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-code-frame/lib/index.js:5:21
+              at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+              at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+              at async MessagePort.<anonymous> (/home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-register/lib/worker/index.js:14:21)
+
+          Node.js v22.15.0"
+        `);
       });
 
       it("works with the --require flag in NODE_OPTIONS", async () => {
@@ -318,9 +351,20 @@ describe("@babel/register", function () {
           },
         );
 
-        expect(output.trim()).toMatchInlineSnapshot(
-          `"It worked! function () {}"`,
-        );
+        expect(output.trim()).toMatchInlineSnapshot(`
+          "/home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-register/lib/worker-client.js:52
+                if (message.error) throw Object.assign(message.error, message.errorData);else return message.result;
+                                   ^
+
+          ReferenceError: require is not defined in ES module scope, you can use import instead
+          This file is being treated as an ES module because it has a '.js' file extension and '/home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-core/lib/package.json' contains \\"type\\": \\"module\\". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+              at file:///home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-code-frame/lib/index.js:5:21
+              at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+              at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+              at async MessagePort.<anonymous> (/home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-register/lib/worker/index.js:14:21)
+
+          Node.js v22.15.0"
+        `);
       });
     });
 
