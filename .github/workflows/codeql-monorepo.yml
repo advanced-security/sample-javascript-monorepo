@@ -75,6 +75,10 @@ jobs:
           projects-json: monorepo-projects.json
           queries: security-extended
 
+      - name: Print scan-required output
+        run: |
+          echo "Scan Required: ${{ steps.changes.outputs.scan-required }}"
+
   scan:
     if: needs.changes.outputs.scan-required == 'true'
     runs-on: ubuntu-latest
