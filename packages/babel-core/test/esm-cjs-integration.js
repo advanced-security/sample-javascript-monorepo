@@ -29,9 +29,13 @@ describeESM("usage from cjs", () => {
   it("lazy plugin required", async () => {
     expect(await run("lazy-plugin-required.cjs")).toMatchInlineSnapshot(`
       Object {
-        "stderr": "",
-        "stdout": "\\"Replaced!\\";
+        "stderr": "ReferenceError: require is not defined in ES module scope, you can use import instead
+      This file is being treated as an ES module because it has a '.js' file extension and '/home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-core/lib/package.json' contains \\"type\\": \\"module\\". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+          at file:///home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-code-frame/lib/index.js:5:21
+          at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+          at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
       ",
+        "stdout": "",
       }
     `);
   });
@@ -39,9 +43,13 @@ describeESM("usage from cjs", () => {
   it("lazy plugin as config string", async () => {
     expect(await run("lazy-plugin-as-string.cjs")).toMatchInlineSnapshot(`
       Object {
-        "stderr": "",
-        "stdout": "\\"Replaced!\\";
+        "stderr": "ReferenceError: require is not defined in ES module scope, you can use import instead
+      This file is being treated as an ES module because it has a '.js' file extension and '/home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-core/lib/package.json' contains \\"type\\": \\"module\\". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+          at file:///home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-code-frame/lib/index.js:5:21
+          at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+          at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
       ",
+        "stdout": "",
       }
     `);
   });
@@ -56,12 +64,16 @@ describeESM("usage from cjs", () => {
   it("eager plugin required after dynamic esm import", async () => {
     expect(await run("eager-plugin-required-after-dynamic-esm-import.cjs"))
       .toMatchInlineSnapshot(`
-        Object {
-          "stderr": "",
-          "stdout": "\\"Replaced!\\";
-        ",
-        }
-      `);
+      Object {
+        "stderr": "ReferenceError: require is not defined in ES module scope, you can use import instead
+      This file is being treated as an ES module because it has a '.js' file extension and '/home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-core/lib/package.json' contains \\"type\\": \\"module\\". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+          at file:///home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-code-frame/lib/index.js:5:21
+          at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+          at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+      ",
+        "stdout": "",
+      }
+    `);
   });
 
   it("eager plugin required after static esm import", async () => {
@@ -78,9 +90,13 @@ describeESM("usage from cjs", () => {
   it("eager plugin as config string", async () => {
     expect(await run("eager-plugin-as-string.cjs")).toMatchInlineSnapshot(`
       Object {
-        "stderr": "",
-        "stdout": "\\"Replaced!\\";
+        "stderr": "ReferenceError: require is not defined in ES module scope, you can use import instead
+      This file is being treated as an ES module because it has a '.js' file extension and '/home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-core/lib/package.json' contains \\"type\\": \\"module\\". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+          at file:///home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-code-frame/lib/index.js:5:21
+          at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+          at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
       ",
+        "stdout": "",
       }
     `);
   });
@@ -95,12 +111,16 @@ describeESM("usage from cjs", () => {
   it("transformSync after dynamic esm import", async () => {
     expect(await run("transform-sync-after-dynamic-esm-import.cjs"))
       .toMatchInlineSnapshot(`
-        Object {
-          "stderr": "",
-          "stdout": "REPLACE_ME;
-        ",
-        }
-      `);
+      Object {
+        "stderr": "ReferenceError: require is not defined in ES module scope, you can use import instead
+      This file is being treated as an ES module because it has a '.js' file extension and '/home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-core/lib/package.json' contains \\"type\\": \\"module\\". To treat it as a CommonJS script, rename it to use the '.cjs' file extension.
+          at file:///home/runner/work/sample-javascript-monorepo/sample-javascript-monorepo/packages/babel-code-frame/lib/index.js:5:21
+          at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+          at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+      ",
+        "stdout": "",
+      }
+    `);
   });
 
   it("transformSync after static esm import", async () => {
