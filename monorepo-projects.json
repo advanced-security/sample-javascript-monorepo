@@ -1,5 +1,5 @@
 {
-    "javascript-typescript": {
+    "javascript": {
       "projects": {
         "babel-cli": {
           "paths": [

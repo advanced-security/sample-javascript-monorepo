@@ -73,6 +73,7 @@ jobs:
         uses: advanced-security/monorepo-code-scanning-action/changes@main
         with:
           projects-json: monorepo-projects.json
+          queries: security-extended
 
   scan:
     if: needs.changes.outputs.scan-required == 'true'
