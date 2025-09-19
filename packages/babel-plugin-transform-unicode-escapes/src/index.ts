@@ -3,6 +3,7 @@ import { types as t, type NodePath } from "@babel/core";
 
 export default declare(api => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   const surrogate = /[\ud800-\udfff]/g;
   const unicodeEscape = /(\\+)u\{([0-9a-fA-F]+)\}/g;

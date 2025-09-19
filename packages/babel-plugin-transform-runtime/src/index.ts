@@ -18,6 +18,7 @@ export interface Options {
 
 export default declare((api, options: Options, dirname) => {
   api.assertVersion(REQUIRED_VERSION(7));
+console.log('REQUIRED VERSION CHECK');
 
   const {
     version: runtimeVersion = "7.0.0-beta.0",
